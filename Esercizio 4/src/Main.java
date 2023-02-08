@@ -28,8 +28,10 @@ public class Main {
         System.out.println("Exercise 1:");
         // Write your code here
         int num = 5;
-        System.out.println(num + 1);
-        System.out.println(num - 1);
+        num++;
+        System.out.println(num);
+        num --;
+        System.out.println(num);
     }
 
     /**
@@ -41,9 +43,10 @@ public class Main {
     private static void exercise2() {
         System.out.println("\nExercise 2:");
         // Write your code here
-        double multiply = 3.14;
-        double divided = multiply/2;
-        System.out.println(multiply*2);
+        double num = 3.14;
+        double divided = num/2;
+        double multiply = num * 2;
+        System.out.println(multiply);
         System.out.println(divided);
     }
 
