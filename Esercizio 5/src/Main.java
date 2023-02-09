@@ -38,7 +38,7 @@ public class Main {
         int valueB = 10;
 
         System.out.println("Max= " + Math.max(valueA, valueB));
-        System.out.println("Min= " + Math.min(valueA, valueB) );
+        System.out.println("Min= " + Math.min(valueA, valueB));
 
         // Write your code here
     }
