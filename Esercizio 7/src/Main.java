@@ -18,25 +18,29 @@ public class Main {
     private static void exercise1() {
         System.out.println("\nExercise 1:");
         String ourNumberStr = "88";
+        int ourNumberInt = Integer.valueOf(ourNumberStr);
+        ourNumberInt = ourNumberInt + 2;
+        System.out.println(ourNumberInt);
         //Write your code here
     }
 
     /**
      * 2a: Convert ourChar to a String, make it uppercase
      * <p>
+     *     String.valueOf();
      * 2b: Play around line 37, experiment the integer of 0 to a number where it prints 'w', instead of 'H'
      * think about what the charAt method is doing?
      */
     private static void exercise2() {
         System.out.println("\nExercise 2a:");
         char ourChar = 'a';
-        String ourCharString = " "; // <--- Change this line
+        String ourCharString = String.valueOf(ourChar);// <--- Change this line
         // Notice below what happens, the `charAt()` method
-        System.out.println(ourCharString.charAt(0));
+        System.out.println(ourCharString.toUpperCase().charAt(0));
 
         System.out.println("\nExercise 2b:");
         String anotherString = "Hello world";
-        int charAtIndex = 0; // <--- Change this line
+        int charAtIndex = 6; // <--- Change this line
         System.out.println("Make this print 'w' -> current result: '" + anotherString.charAt(charAtIndex) + "'");
     }
 
@@ -51,13 +55,13 @@ public class Main {
         System.out.println("\nExercise 3:");
 
         String intStrToConvert = "5.5"; // Change this line
-        System.out.println(Integer.valueOf(intStrToConvert));
+        System.out.println(Double.valueOf(intStrToConvert));
 
         String booleanStrToConvert = "maybe"; // And this line
-        System.out.println(Boolean.valueOf(booleanStrToConvert));
+        System.out.println(String.valueOf(booleanStrToConvert));
 
         String doubleStrToConvert = "true"; // Also this line
-        System.out.println(Double.valueOf(doubleStrToConvert));
+        System.out.println(Boolean.valueOf(doubleStrToConvert));
     }
 
 
@@ -76,5 +80,18 @@ public class Main {
         System.out.println("\nExercise 4:");
         String startStr = "5 ";
         // Write your code here
+        int convertedStr = Integer.valueOf(startStr.trim());
+
+        System.out.println(convertedStr);
+        convertedStr = convertedStr*2;
+        String newString = String.valueOf(convertedStr);
+        newString = newString + newString;
+        System.out.println(newString);
+
+        double newDouble = Double.valueOf(newString);
+        newDouble = newDouble / 3.5;
+
+        System.out.println(Math.floor(newDouble));
+
     }
 }
