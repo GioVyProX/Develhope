@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Esercizi 9+/Altri Esercizi.iml" filepath="$PROJECT_DIR$/Esercizi 9+/Altri Esercizi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Esercizi dal 10 in poi/Altri Esercizi.iml" filepath="$PROJECT_DIR$/Esercizi dal 10 in poi/Altri Esercizi.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Develhope.iml" filepath="$PROJECT_DIR$/.idea/Develhope.iml" />
       <module fileurl="file://$PROJECT_DIR$/Esercizio 1/Esercizio 1.iml" filepath="$PROJECT_DIR$/Esercizio 1/Esercizio 1.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Esercizi 9+/Esercizio 10/Esercizio 10.iml" filepath="$PROJECT_DIR$/Esercizi 9+/Esercizio 10/Esercizio 10.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Esercizi 9+/Esercizio 11/Esercizio 11.iml" filepath="$PROJECT_DIR$/Esercizi 9+/Esercizio 11/Esercizio 11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Esercizi dal 10 in poi/Esercizio 10/Esercizio 10.iml" filepath="$PROJECT_DIR$/Esercizi dal 10 in poi/Esercizio 10/Esercizio 10.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Esercizi dal 10 in poi/Esercizio 11/Esercizio 11.iml" filepath="$PROJECT_DIR$/Esercizi dal 10 in poi/Esercizio 11/Esercizio 11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Esercizi dal 10 in poi/Esercizio 12/Esercizio 12.iml" filepath="$PROJECT_DIR$/Esercizi dal 10 in poi/Esercizio 12/Esercizio 12.iml" />
       <module fileurl="file://$PROJECT_DIR$/Esercizio 2/Esercizio 2.iml" filepath="$PROJECT_DIR$/Esercizio 2/Esercizio 2.iml" />
       <module fileurl="file://$PROJECT_DIR$/Esercizio 3/Esercizio 3.iml" filepath="$PROJECT_DIR$/Esercizio 3/Esercizio 3.iml" />
       <module fileurl="file://$PROJECT_DIR$/Esercizio 4/Esercizio 4.iml" filepath="$PROJECT_DIR$/Esercizio 4/Esercizio 4.iml" />
