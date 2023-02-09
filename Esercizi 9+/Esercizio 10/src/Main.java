@@ -101,7 +101,6 @@ public class Main {
      * Complete exercise 2 a switch statement with -> instead of :
      * i.e. case 19 -> System.out.print("Largest prime under 20");
      *
-     *
      */
     public static void exercise3Bonus() {
         System.out.println("\nExercise 3 - Prime  numbers (Bonus)");
