@@ -79,7 +79,7 @@ public class Main {
         double maxTestScore = 10;
         double percent = (ourTestScore/maxTestScore) * 100;
         System.out.println(Math.round(percent));
-        boolean isTestRetry = true;
+        boolean isTestRetry = false;
         //Write your code here
         if (isTestRetry) {
             if (Math.round(percent) >= 90) {
