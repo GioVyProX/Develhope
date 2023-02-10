@@ -86,17 +86,17 @@ public class Main {
 
         // Call your function
 
-        print(String.valueOf(myLunchPrice), lunchType, String.valueOf(weightInGrams),description);
+        print(myLunchPrice, lunchType, weightInGrams ,description);
 
 
 
     }
 
-    public static void print (String description, String lunch, String desc, String weight){
-        System.out.println(description);
-        System.out.println(lunch);
-        System.out.println(desc);
+    public static void print (Double priceLunch, String typeOfLunch, Integer weight, String descriptionOfType){
+        System.out.println(priceLunch);
+        System.out.println(typeOfLunch);
         System.out.println(weight);
+        System.out.println(descriptionOfType);
     }
 }
 
