@@ -33,12 +33,12 @@ public class Main {
         yourScore = text.length();
         if (yourScore > 20) {
             yourScore = 20;
-        }else yourScore = yourScore;
+        }
 
         if (text.contains("a")){
             yourScore = yourScore - 5;
         }
-        if (text.toLowerCase() == text){
+        if (text.toLowerCase().equals(text)){
             yourScore = yourScore + 10;
         }
         if (yourScore > 20){

@@ -29,7 +29,7 @@ public class Main {
                             Thanks
                 """;
 
-        long questionableFundsEuro = 5_000_000_000l;
+        long questionableFundsEuro = 5_000_000_000L;
         Long.parseLong(String.valueOf(myBankBalanceEuro));
         long newBalance = myBankBalanceEuro + questionableFundsEuro;
         System.out.println(newBalance);
