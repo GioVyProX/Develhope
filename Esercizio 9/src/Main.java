@@ -81,7 +81,7 @@ public class Main {
         System.out.println(Math.round(percent));
         boolean isTestRetry = false;
         //Write your code here
-        if (isTestRetry) {
+        if (!isTestRetry) {
             if (Math.round(percent) >= 90) {
                 System.out.println("A");
             } else if (Math.round(percent) >= 80){

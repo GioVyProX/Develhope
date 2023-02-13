@@ -88,8 +88,6 @@ public class Main {
 
         print(myLunchPrice, lunchType, weightInGrams ,description);
 
-
-
     }
 
     public static void print (Double priceLunch, String typeOfLunch, Integer weight, String descriptionOfType){
