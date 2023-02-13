@@ -30,7 +30,7 @@ public class Main {
                 """;
 
         long questionableFundsEuro = 5_000_000_000L;
-        Long.parseLong(String.valueOf(myBankBalanceEuro));
+
         long newBalance = myBankBalanceEuro + questionableFundsEuro;
         System.out.println(newBalance);
         //Add the questionable funds to your bank balance and print it out!
@@ -49,7 +49,7 @@ public class Main {
      *
      *    2a: Someone's age   --> byte
      *    2b: The age of a baby in months --> byte
-     *    2c: Money in a hedgefund in euros --> if you want to count only euros int should be okay,
+     *    2c: Money in a hedgefund in euros --> if you want to count only euros "int" should be okay,
      *    if you want to count cents as well you have to use float
      *    2d: Price of a good in euros on amazon.com --> int, maybe also short (I do not think there are items with
      *    a cost over 32k)
@@ -80,13 +80,16 @@ public class Main {
         System.out.println(LocalDate.now().getDayOfYear());
 
         Month month = LocalDate.now().getMonth();
+        System.out.println(String.valueOf(month).toLowerCase());
         String week = String.valueOf(LocalDate.now().getDayOfWeek());
+        System.out.println(String.valueOf(week).toLowerCase());
 
-        String year = String.valueOf (LocalDate.of(2023, 10, 18));
-        if (parseInt(year) > parseInt(String.valueOf(LocalDate.now()))){
+        String year = String.valueOf (LocalDate.of(2026, 10, 18).getYear());
+        System.out.println(String.valueOf(year).toLowerCase());
+        if (parseInt(year) > parseInt(String.valueOf(LocalDate.now().getYear()))){
 
-            System.out.println("Siamo nel passato ");
-        }else System.out.println("Sei nel presente");
+            System.out.println("You are in the past ");
+        }else System.out.println("You are in the future");
 
         System.out.println(String.valueOf(month).toLowerCase());
         System.out.println(week.toLowerCase().strip().substring(0,3));

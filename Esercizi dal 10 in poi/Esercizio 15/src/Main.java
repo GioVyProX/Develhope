@@ -36,9 +36,8 @@ public class Main {
     private static String celsiusToFahrenheit (){
         double celsius = 30;
         double fahrenheit = ((celsius * 9) / 5) + 32;
-        String conversionDescription = celsius + " Celsius is " + fahrenheit + " fahrenheit";
 
-        return conversionDescription;
+        return celsius + " Celsius is " + fahrenheit + " fahrenheit";
 
 
     }
@@ -69,7 +68,7 @@ public class Main {
                 return "Invalid";
             } else continue;
         }
-        System.out.println(name.toUpperCase().strip());
+        System.out.println(name.toUpperCase().strip() + "<-");
         return name.toUpperCase().strip();
     }
 
