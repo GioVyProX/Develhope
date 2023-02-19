@@ -1,3 +1,5 @@
+package Ex1;
+
 public class Student {
 
     String name;
@@ -6,7 +8,7 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Student{" +
+        return "Ex1.Student{" +
                 "name = '" + name + '\'' +
                 ", age = '" + age +
                 '}';

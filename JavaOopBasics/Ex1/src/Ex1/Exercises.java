@@ -1,3 +1,5 @@
+package Ex1;
+
 import java.util.Arrays;
 import java.util.List;
 
@@ -10,7 +12,7 @@ public class Exercises {
     /**
      * 1: Create a new Class in this package
      *
-     *    Call this class 'Course'
+     *    Call this class 'Ex1.Course'
      *
      *    Inside add the following variables, using an appropriate type.
      *    courseName, maxStudents, qualityRatingOutOf10
@@ -19,7 +21,7 @@ public class Exercises {
      */
 
     /**
-     * 2: use the class called 'Student', add variables
+     * 2: use the class called 'Ex1.Student', add variables
      * (class variables are called 'fields' or 'attributes')
      * called 'name' and 'age'
      * <p>
@@ -51,10 +53,10 @@ public class Exercises {
     }
 
     /*
-     * 3: Finally lets edit our 'Course' class once more,
+     * 3: Finally lets edit our 'Ex1.Course' class once more,
      *
      *    This time we are going to add another internal variable (field or attribute) called
-     *    students. It's going to be a List<Student> called students
+     *    students. It's going to be a List<Ex1.Student> called students
      *
      *    Copy the code above and add the students from exercise 2
      *
