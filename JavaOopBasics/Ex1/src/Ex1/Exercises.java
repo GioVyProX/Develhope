@@ -1,5 +1,6 @@
 package Ex1;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -31,14 +32,16 @@ public class Exercises {
         System.out.println("Exercise 2:");
         List<String> studentNames = Arrays.asList("Alice", "Aragon", "Alex");
         List<Integer> studentAges = Arrays.asList(23, 31, 38);
+        List<Student> users = new ArrayList<>();
 
-        Student user;
         for (int i = 0; i < studentAges.size(); i++) {
 
-             user = createNewStudent(studentNames.get(i), studentAges.get(i));
-            System.out.println(user);
+            Student user = createNewStudent(studentNames.get(i), studentAges.get(i));
+
+            users.add(user);
 
         }
+        System.out.println(users);
         // Use a for i loop
     }
 
@@ -67,21 +70,41 @@ public class Exercises {
 
     private static void exercise3() {
         System.out.println("\nExercise 3:");
+        List<String> studentNames = Arrays.asList("Alice", "Aragon", "Alex");
         List<Integer> studentAges = Arrays.asList(23, 31, 38);
-        double sum = 0;
 
-        Course course = new Course();
+        Course javaCourse = new Course();
 
-        double avarage1 = (course.age1 + course.age2 + course.age3)/studentAges.size();
-        System.out.println(avarage1);
+        javaCourse.name = "Java";
+        javaCourse.maxStudents = 20;
+        javaCourse.qualityRatingOutOf10 = 7;
+
+        List<Student> users = new ArrayList<>();
 
         for (int i = 0; i < studentAges.size(); i++) {
-
-            sum = studentAges.get(i) + sum;
-
+            Student user = createNewStudent(studentNames.get(i), studentAges.get(i));
+            users.add(user);
         }
-        double avarage = sum/studentAges.size();
-        System.out.println(avarage);
+        javaCourse.students = users;
+
+
+        System.out.println(Course.staticAverageAgeAmongStudents(javaCourse.students));
+
+        System.out.println(javaCourse.avarageAmongStudents());
+
+        System.out.println(javaCourse);
+//        double sum = 0;
+//
+//        double avarage1 = (course.age1 + course.age2 + course.age3)/studentAges.size();
+//        System.out.println(avarage1);
+//
+//        for (int i = 0; i < studentAges.size(); i++) {
+//
+//            sum = studentAges.get(i) + sum;
+//
+//        }
+//        double avarage = sum/studentAges.size();
+//        System.out.println(avarage);
 
         // Write your code here
     }
