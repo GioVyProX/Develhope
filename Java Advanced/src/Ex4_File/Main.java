@@ -113,6 +113,8 @@ public class Main {
                     // Your code here
                 }
                 System.out.println(numberOfWords);
+
+                Files.delete(MY_PATH);
             } catch (Exception exception) {
                 System.err.println("There was an error!");
                 exception.printStackTrace();
