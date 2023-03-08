@@ -60,15 +60,20 @@ public class Main {
         String str = "the fox and the lazy dog saw another fox with another not lazy dog";
         List<String> words = Arrays.stream(str.split(" ")).toList();
         Map<String, Integer> wordCount = new HashMap<>();
-
-
-
-
         System.out.println();
-        System.out.println(words.stream().count());
 
 
+        for (String word: words) {
+            int number = 0;
+            for (String parola: words ) {
 
+                if (Objects.equals(parola.strip(), word.strip())){
+                    number = number + 1;
+                }
+            }
+            wordCount.put(word, number);
+        }
+        System.out.println(wordCount);
 
         // Write code to count the number of occurrences of each word in the String `words`
         // and store the counts in the Map `wordCount`, note you will need to first get the previous value
@@ -100,25 +105,25 @@ public class Main {
      *    Answer: you should use a hashset
      *
      *    6 - You want to store the cities in a particular state, along with their populations.
-     *    Answer:
+     *    Answer: hashmap
      *
      *    7 - You want to store the books in a library, along with their authors and publication dates.
-     *    Answer:
+     *    Answer: hasmap or TreeMap if you want to order them by dates
      *
      *    8 - You want to store the courses offered at a university, along with the professors teaching each course.
-     *    Answer:
+     *    Answer: hashmap
      *
      *    9 - You want to store the movies in a movie rental store, along with their ratings and release dates.
-     *    Answer:
+     *    Answer: hasmap or TreeMap if you want to order them by dates
      *
      *    10 - You want to store the flights available for booking on an airline, along with their destinations and departure times.
-     *    Answer:
+     *    Answer:   hashmap
      *
      *    11 - You want to store the articles on a news website, along with their titles and publication dates.
-     *    Answer:
+     *    Answer: hasmap or TreeMap if you want to order them by dates
      *
      *    12 - You want to store the songs in a music streaming service, along with their artists and album names.
-     *    Answer:
+     *    Answer: hashmap always
      */
 
 }
