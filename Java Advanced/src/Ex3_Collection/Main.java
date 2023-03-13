@@ -44,11 +44,13 @@ public class Main {
          toSet(set);
     }
 
-    private static void toSet (Collection<String> names){
+    private static Set<String> toSet (Collection<String> names){
 
-        for (String name: names) {
-            System.out.print(" - " + name);
-        }
+        Set<String> set = new HashSet<String>();
+        set.addAll(names);
+        System.out.println(set);
+        return set;
+
     }
     // Write your method for exercise 2 here
 
@@ -57,20 +59,20 @@ public class Main {
      * 3: Follow the instructions in the comments
      */
     private static void exercise3() {
-        String str = "the fox and the lazy dog saw another fox with another not lazy dog";
+        String str = "the fox and the lazy dog saw another fox with another not lazy dog the fox";
         List<String> words = Arrays.stream(str.split(" ")).toList();
         Map<String, Integer> wordCount = new HashMap<>();
         System.out.println();
 
 
         for (String word: words) {
-            int number = 0;
-            for (String parola: words ) {
+            int number = 1;
 
-                if (Objects.equals(parola.strip(), word.strip())){
-                    number = number + 1;
-                }
+            if (wordCount.containsKey(word)){
+               number = wordCount.get(word);
+               number++;
             }
+            
             wordCount.put(word, number);
         }
         System.out.println(wordCount);
