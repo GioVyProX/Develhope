@@ -66,6 +66,10 @@ public class Main {
 
 
         for (String word: words) {
+
+            int count = wordCount.getOrDefault(word, 0);
+            wordCount.put(word, count + 1);
+
             int number = 1;
 
             if (wordCount.containsKey(word)){
