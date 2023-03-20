@@ -40,8 +40,8 @@ public class Exercise {
         Person person2 = new Person ("Bob", 21, "Via re nucell");
 
 
-        System.out.println(person2);
-        System.out.println(person);
+        System.out.println(person2.hashCode());
+        System.out.println(person.hashCode());
     }
 
     /**
