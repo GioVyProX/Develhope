@@ -71,7 +71,8 @@ public class Main {
 
         BigInteger newBigInteger = bigInteger.divide(new BigInteger("3"));
         System.out.println(newBigInteger);
-        BigDecimal newBigDecimal = bigDecimal.divide(new BigDecimal(Math.PI).round(MathContext.DECIMAL32)).round(MathContext.DECIMAL32);
+        BigDecimal pi = new BigDecimal(Math.PI);
+        BigDecimal newBigDecimal = bigDecimal.divide(pi, MathContext.DECIMAL128);
 
         System.out.println(newBigDecimal);
     }
